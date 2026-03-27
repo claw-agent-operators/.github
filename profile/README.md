@@ -12,9 +12,12 @@ across installations. These tools fill that gap.
 Universal CLI for claw agent architectures. One binary to run agents, watch
 conversations, and inspect running instances — across NanoClaw, ZeptoClaw,
 OpenClaw, PicoClaw, and others.
+```
 claw repl -g main
 claw ps
 claw watch -g dev
+claw rebuild
+```
 Uses architecture-specific driver binaries via NDJSON on stdin/stdout.
 No plugins, no shared libraries, no version coupling.
 
