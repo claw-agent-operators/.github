@@ -21,6 +21,7 @@ claw repl -g main
 claw ps
 claw watch -g dev
 claw rebuild
+claw api
 ```
 Uses architecture-specific driver binaries via NDJSON on stdin/stdout.
 No plugins, no shared libraries, no version coupling.
@@ -41,6 +42,8 @@ into any supoorted target.
 ```
 molt export ~/nanoclaw-install --out my-agents.molt
 molt import my-agents.molt ~/new-install --arch zepto
+molt sync init ~/nanoclaw-install
+molt restore
 ```
 ---
 
