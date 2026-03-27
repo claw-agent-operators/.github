@@ -21,7 +21,8 @@ claw repl -g main
 claw ps
 claw watch -g dev
 claw rebuild
-claw api
+claw health
+claw api serve
 ```
 Uses architecture-specific driver binaries via NDJSON on stdin/stdout.
 No plugins, no shared libraries, no version coupling.
