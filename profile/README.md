@@ -6,6 +6,7 @@ across installations. These tools fill that gap.
 
 ---
 
+
 ### [claw](https://github.com/claw-agent-operators/claw)
 
 Universal CLI for claw agent architectures. One binary to run agents, watch
@@ -23,9 +24,11 @@ No plugins, no shared libraries, no version coupling.
 
 Move your agents between architectures. Exports groups, memory, skills,
 conversations, and scheduled tasks into a portable `.molt` bundle, then imports
-into any supported target.
+into any supoorted target.
+```
 molt export ~/nanoclaw-install --out my-agents.molt
 molt import my-agents.molt ~/new-install --arch zepto
+```
 ---
 
 ### Driver protocol
